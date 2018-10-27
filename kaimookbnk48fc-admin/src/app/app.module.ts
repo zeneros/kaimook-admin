@@ -14,9 +14,11 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ThemeModule } from './@theme/theme.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AuthComponent, LoginComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
