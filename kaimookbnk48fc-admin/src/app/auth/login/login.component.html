@@ -1,20 +1,20 @@
 <h1 id="title" class="title">Sign In</h1>
 
 <nb-alert *ngIf="showMessages.error && errors?.length && !submitted" outline="danger" role="alert">
-  <p class="alert-title"><b>Oh snap!</b></p>
+  <!-- <p class="alert-title"><b>Oh snap!</b></p> -->
   <ul class="alert-message-list">
     <li *ngFor="let error of errors" class="alert-message">{{ error }}</li>
   </ul>
 </nb-alert>
 
 <nb-alert *ngIf="showMessages.success && messages?.length && !submitted" outline="success" role="alert">
-  <p class="alert-title"><b>Hooray!</b></p>
+  <!-- <p class="alert-title"><b>Hooray!</b></p> -->
   <ul class="alert-message-list">
     <li *ngFor="let message of messages" class="alert-message">{{ message }}</li>
   </ul>
 </nb-alert>
 
-<form (ngSubmit)="login()" #form="ngForm" aria-labelledby="title">
+<form (ngSubmit)="login2()" #form="ngForm" aria-labelledby="title">
 
   <div class="form-control-group">
     <label class="label" for="input-username">Username:</label>
